@@ -27,14 +27,14 @@ for (var line of lines) {
 
 var importOld = true
 if (importOld) {
-    var depth = 151222319504
-    pos = [ 'DPS', 'DDZ', 'ZZZ', 'VDF', 'BND', 'GVZ' ]
+    var depth = 231310972463
+    pos = [ 'SCZ', 'DDZ', 'TNJ', 'PTZ', 'STP', 'NRC' ]
 }
 
 while (true) {
 
     var zCounter = 0;
-    var move = depth % scheme.length
+    var move = depth % scheme.length;
     var side = 0
     if (scheme[move] == "R") {
         side = 1
