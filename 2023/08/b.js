@@ -1,9 +1,5 @@
 const fs = require('fs');
-
-// Read the file synchronously
 const fileContent = fs.readFileSync('./b-input.txt', 'utf-8');
-
-// Split the content by new lines
 const lines = fileContent.split(/\r?\n/);
 
 var scheme = ""
