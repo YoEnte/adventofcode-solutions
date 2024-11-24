@@ -27,8 +27,8 @@ for (var line of lines) {
 
 var importOld = true
 if (importOld) {
-    var depth = 231310972463
-    pos = [ 'SCZ', 'DDZ', 'TNJ', 'PTZ', 'STP', 'NRC' ]
+    var depth = 581068792046
+    pos = [ 'VHK', 'DDZ', 'CCB', 'PTZ', 'NQZ', 'NRC' ]
 }
 
 while (true) {
