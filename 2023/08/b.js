@@ -1,9 +1,5 @@
 const fs = require('fs');
-
-// Read the file synchronously
 const fileContent = fs.readFileSync('./b-input.txt', 'utf-8');
-
-// Split the content by new lines
 const lines = fileContent.split(/\r?\n/);
 
 var scheme = ""
@@ -31,14 +27,14 @@ for (var line of lines) {
 
 var importOld = true
 if (importOld) {
-    var depth = 151222319504
-    pos = [ 'DPS', 'DDZ', 'ZZZ', 'VDF', 'BND', 'GVZ' ]
+    var depth = 1777115964223
+    pos = [ 'SCZ', 'NJC', 'KPK', 'NQQ', 'NQZ', 'GVZ' ] 
 }
 
 while (true) {
 
     var zCounter = 0;
-    var move = depth % scheme.length
+    var move = depth % scheme.length;
     var side = 0
     if (scheme[move] == "R") {
         side = 1
