@@ -34,11 +34,7 @@ with open('input.txt', 'r', encoding='utf-8') as file:
     
     count = 0
 
-    i = 0
     for bank in file:
-        if False:
-            i+=1
-            continue
 
         bank_ = bank.rstrip('\n')
         
@@ -50,8 +46,6 @@ with open('input.txt', 'r', encoding='utf-8') as file:
         for j in sindeces:
             jolt += bank_[j]
         count += int(jolt)
-
-        i+=1
 
     print(count)
 
