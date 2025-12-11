@@ -3,8 +3,8 @@ from graph import Graph
 
 transposition = {}
 
-def dfs(node, graph: Graph, has_dac, has_fft, visited):
-    print(node, visited)
+def dfs(node, graph: Graph, has_dac, has_fft):
+    #print(node, visited)
     if node == "out":
         if has_dac and has_fft:
             return 1
@@ -21,7 +21,7 @@ def dfs(node, graph: Graph, has_dac, has_fft, visited):
     
     paths = 0
     for _, succ in succs:
-        paths += dfs(succ, graph, has_dac or node == "dac", has_fft or node == "fft", visited+1)
+        paths += dfs(succ, graph, has_dac or node == "dac", has_fft or node == "fft")
 
     transposition[(node, has_dac, has_fft)] = paths
     return paths
@@ -36,4 +36,4 @@ with open('input.txt', 'r', encoding='utf-8') as file:
         for to in (tos[1:]).split(" "):
             graph.add_edge(start, 0, to)
 
-    print(dfs("svr", graph, False, False, 0))
+    print(dfs("svr", graph, False, False))
